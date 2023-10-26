@@ -1,0 +1,438 @@
+<!DOCTYPE html ><html><head><title>Events</title><link rel="shortcut icon" href="../static/faviconNEW.png" type="image/x-icon"/><style>*{
+    margin: 0;
+    padding: 0;
+    font-family: futura;
+}
+/* #7EB6C8 */
+@font-face {
+    font-family: Samarkan;
+    src: url(../static/SamarkanNormal-Gg5D.ttf);
+}
+@font-face {
+    font-family: futura;
+    src: url(../static/FuturaNowHeadline.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    padding: 0px;
+    /* padding-right: 8px; */
+    display: flex;
+    justify-content: right;
+    background-color: #db1133cc;
+    /* opacity: 80%; */
+    position: sticky;
+    top:0;
+    align-items: center;
+    padding-bottom: 13px;
+    z-index: 2;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width:75%;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 0px 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18.5px;
+}
+.navitem{
+    margin: 22px 0;
+}
+#navbar li a:hover{
+    color: #003970;
+    text-decoration: none;
+    padding: 0px 30px;
+    
+}
+#navbar div{
+    height: 70px;
+    width:25%;
+    justify-content: left; 
+    margin-top: 6px;  
+    margin-left: 14px;
+    color: white;
+    text-decoration: none;
+}
+#navbar div h3{
+    margin-top: 12px;
+}
+#navbar div h3 a{
+    font-family: Samarkan;
+    font-size: 43px;
+    padding: 5px 10px; 
+    font-weight: 100; 
+    text-decoration: none;
+    color: white;
+}
+#navbar div h3 a:hover{
+    font-family: Samarkan;
+    font-size: 43px;
+    padding: 5px 10px; 
+    font-weight: 100; 
+    text-decoration: none;
+    color:#41eaf3;
+}
+#Image{
+    display: flex;
+    flex-direction: column;
+    color: #003970;
+    height: 623px;
+    /* background-image: url(../static/anveshanamLOGO.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+#Image h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+#Image h3{
+    color: #7EB6C8;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* /////////////////////////swiper////////// */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper{
+    width:100%;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+}
+
+.swiper-slide img{
+    width:100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+/* ////////////////////////////////////////end of swiper */
+#home-events {
+    background-color: #ffbdbd;
+    text-align: center;
+    padding-top: 100px;
+    /* height: fit-content; */
+    padding-bottom: 15px;
+}
+#home-events .container{
+    width: 100%;
+    /* height: 100vh; */
+    background: #ffbdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home-events .swiper{
+    /* height:100%; */
+    /* height: 100vh; */
+    width: 30%;
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+}
+#home-events .swiper-slide img{
+    /* height: fit-content; */
+    /* width: 20%; */
+}
+.container .introText{
+    color: #fff;
+    text-align: justify;
+    z-index: +1;
+    font-size: 25px;
+    display: block;
+    padding: 140px
+}
+#AimVision{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 100px;
+    margin-bottom: 70px;
+}
+#aim{
+    padding-right: 15px;
+}
+#vision{
+    padding-left: 15px;
+}
+#AimVision h3{
+    text-align: center;
+    color:#41eaf3;
+    font-size: 30px;
+}
+#AimVision p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#Events{
+    background-color: rgb(201, 242, 255);
+    /* height: 300px; */
+    justify-content: center;
+    padding: 20px 0px;
+    /* border: 5px solid black; */
+    text-align: center;
+}
+
+.anEvent{
+    display: inline-block;
+    /* border: 2px solid black;
+    border-radius: 5px; */
+    width: 30%;
+    margin: 30px 20px;
+    padding-top: 6px;
+    /* position: inherit; */
+}
+.anEvent p{
+    font-size: 20px;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    
+}
+.card-image{
+    height: 300px; 
+}
+.card-image img{
+    height:inherit ;
+}
+#Events h3, #home-events h3{
+    text-align: center;
+    font-size: 36px;
+    color: #db1133;
+    /* border: 5px solid pink; */
+}
+#home-events h3{
+    margin-bottom: 15px;
+}
+#Events h4{
+    /* text-align: center; */
+    font-size: 27px;
+    color: #003970;
+}
+#Activities{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    background-image: url(../static/images/jason-goodman-m2TU2gfqSeE-unsplash\ -\ Edited.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+#Activities h3{
+    text-align: center;
+    font-size: 36px;
+    color: #db1133;
+}
+#Activities h4{
+    /* text-align: center; */
+    font-size: 25px;
+    color: #003970;
+}
+#Activities p{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.activitiesDIV{
+   margin: 11px 0; 
+}
+#moreACtivity, #moreEvents{
+    
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+#Activities a, #home-events a{
+    color: #db1133;
+    text-decoration:  none;
+    border: solid #003970 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-items: center;
+}
+#Activities a:hover, #home-events a:hover{
+    color: #41eaf3;
+    text-decoration:  none;
+    border: solid #003970 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-items: center;
+}
+#Announce{
+    height: 300px;
+}
+#About{
+    height: 300px;
+}
+#feedback{
+    background-color: #95d1ebe1;
+    height: 220px;
+    /* border-top: 3px solid rgba(74, 71, 71, 0.862); */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#feedback btn a{
+    text-decoration: none;
+    color: #c31414;
+    text-decoration:  none;
+    border: solid #ffffff 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    justify-items: center;
+    /* background-color: #496987; */
+}
+#feedback btn a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration:  none;
+    border: solid #ffffff 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    justify-items: center;
+    background-color: #db1133da;
+}
+#feedback h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#footer{
+    height: 70px;
+    background-color: rgb(47, 45, 45);
+    padding: 20px 100px;
+    display: flex;
+    justify-items: center;
+}
+#copyright{
+    width: 60%;
+    color: white;
+    justify-items:center ;
+    font-size: 30px;
+    font-weight: 100;
+}
+#copyright h6{
+    font-weight: 100;
+    margin-top: 14px;
+}
+#footimgs{
+    height: 65px;
+    width:40%;
+    justify-items: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 7px;
+}
+#footer img{
+    height:40px;
+    margin: 0px 10px;
+    border-radius: 20%;
+    border: 5px solid white;
+}
+#footer img:hover{
+    height:40px;
+    margin: 0px 10px;
+    border-radius: 20%;
+    border: 5px solid white;
+    filter: invert(100%);
+}
+#ourTeam h3, #contact h3{
+    text-align: center;
+    font-size: 36px;
+    color: #db1133;
+}
+#ourTeam .member{
+    height: 322px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+#ourTeam .memberIMG{
+    height: 320px;
+}
+#ourTeam .memberIMG img{
+    height: inherit;
+}
+#contact{
+    background-image: url(../static/images/banksof.png);
+    height: 425px;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    /* display: flex;
+    flex-direction:column; */
+}
+#contact .CONTcontent{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+#contact .right{
+    width:50%;
+}
+#contact .left{
+    width:50%;
+}
+#contact h4{
+    font-size: 23px;
+    color: #ffeaea;
+    margin-bottom: 10px;
+}
+#contact p{
+    font-size: 20px;
+    text-align: none;
+    color: #fff;
+}
+#contact a{
+    text-decoration: none;
+    color: #fff;
+}
+#contact a:hover{
+    color:#95d1ebe1;
+}
+@media only screen and (max-width: 1198px ){
+    
+}</style><script> </script></head></html><body> <nav id="navbar"> <div id="logo"><h3 class="logname"><a href="/">anveshanam</a></h3></div><ul id="nav-list"><li class="navitem"><a href="/">Home</a></li><li class="navitem"><a href="/">Events</a></li><li class="navitem"><a href="/">Activities</a></li><li class="navitem"><a href="/">Announcements</a></li><li class="navitem"><a href="/">Gallery</a></li><li class="navitem"><a href="/about">Our Team and Contact</a></li></ul></nav><section id="Events"> <h3>Events</h3><div class="anEvent"><h4>Thriving in your Research Journey</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Prof. Himanshu Shekhar</p><p>Designation: Asst. Prof. at IITGN</p><p>Date: May 22, 2021</p><p>Topic: Identification research problem and high-quality publication</p></div></div></div><div class="anEvent"><h4>Career in Academics</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Prof. Rajendra Nagar</p><p>Designation: Asst. Prof at IIT Jodhpur</p><p>Date: June 4, 2021</p><p>Topic: Academic as Career after Ph.D.</p></div></div></div><div class="anEvent"><h4>All About The Pmrf Scheme</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Sachin Suthar</p><p>Designation: PMRF fellow at IITGN</p><p>Date: June 20, 2021</p><p>Topic: PMRF awareness</p></div></div></div><div class="anEvent"><h4>The Patenting Journey</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Prof. Uttama Lahiri</p><p>Designation: Asst. Prof at IITGN</p><p>Date: July 24, 2021</p><p>Topic: About Patent and innovation way of research</p></div></div></div><div class="anEvent"><h4>Workshop on MATLAB</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Ajay Kumar</p><p>Designation: Alumni MTech IITGN</p><p>Date: August 12, 2021</p><p>Topic: MATLAB programing</p></div></div></div><div class="anEvent"><h4>All about SERB PMRF fellowship</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: </p><p>Designation: SERB PMRF fellow at IITGN</p><p>Date: August 15, 2021</p><p>Topic: Industrial PMRF</p></div></div></div><div class="anEvent"><h4>Research 101</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXTT"><p>Speaker: Prof. Anamika Dubey</p><p>Designation: Asst. Prof. Washington State University</p><p>Date: August 21, 2021</p><p>Topic: Research Scenerio in top institute abroad</p></div></div></div><div class="anEvent"><h4>A Career in Academics</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Dr. Kaling Taki</p><p>Designation: Asst. Prof. IIT Guwahati</p><p>Date: October 6, 2021</p><p>Topic: Impactful Ph.D. and how to proceed the right way</p></div></div></div><div class="anEvent"><h4>Interaction Session</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Prof. Vannet Aggrawal</p><p>Designation: Assoc. Prof. Purdue University</p><p>Date: Nov 6, 2021</p><p>Topic: Impactful Research and Lab research environment at Purdue University</p></div></div></div><div class="anEvent"><h4>PMRF Interaction Session</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Recipients of PMRF MAy cycle</p><p>Designation: IITGN</p><p>Date: Dec 11, 2021</p><p>Topic: About PMRF scheme</p></div></div></div><div class="anEvent"><h4>Artificial Intelligence, Past, Present, Future</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Prof. Nipun Batra</p><p>Designation: Asst. Prof. at IITGN</p><p>Date: Jan 09, 2022</p><p>Topic: Artificial Intelligence</p></div></div></div><div class="anEvent"><h4>Nidhi Prayas: An opportunity to start your entrepreneurial journey</h4><div class="card-box"> <div class="card-image"><img src="" alt=""/></div><div class="eventTEXT"><p>Speaker: Rajdeep Singh Devra</p><p>Designation: Receipient of Nidhi Prayas Grant in Cohort-1</p><p>Date: Jan 12, 2022</p><p>Topic: Nidhi Prayas Grant awareness</p></div></div></div><div class="anEvent"><h4>Test</h4><div class="card-box"> <div class="card-image"><img src="../static/images/ms abroad final 2.png" alt=""/></div><div class="eventTEXT"><p>TEST   </p><p>TEST   </p><p>TEST</p><p>TEST   </p></div></div></div></section></body>

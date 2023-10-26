@@ -1,0 +1,130 @@
+doctype html 
+html
+  head
+    title Our Team and Contact
+
+    link(rel="shortcut icon", href="../static/faviconNEW.png", type="image/x-icon")
+    
+    style
+      include ../static/style.css 
+
+    script 
+      include ../static/script.js   
+
+body 
+  nav#navbar 
+    div#logo
+      h3.logname #[a(href='/') anveshanam]
+      //- img.logoimg(src="../static/.png")
+    ul#nav-list
+      li.navitem #[a(href='/') Home]
+      li.navitem #[a(href='/#home-events') Events]
+      li.navitem #[a(href='/#whatWeDo') Activities]
+      li.navitem #[a(href='/') Announcements]
+      li.navitem #[a(href='/gallery') Gallery]
+      li.navitem #[a(href='/aboutUs') Our Team and Contact]
+  
+  
+
+  section#ourTeam 
+    h3 Our Team
+    .member 
+        div.memberIMG 
+          img(src="../static/images/Rajdeep.jpg", alt="")
+        div.memberDATA 
+          h4 Rajdeep Singh Devra 
+          h5 Founding Member and Secretary 
+          p 
+          p xyz@iitgn.ac.in
+          h6 #[a(href='') LinkedIn]
+    
+    .member.flexx
+        div.memberIMG
+          img(src="../static/images/Anuj.jpg", alt="") 
+        div.memberDATA 
+          h4 Anuj Kushwa 
+          h5 Senior Member 
+          p Anuj is a PhD student in Earth Science, at IIT Gandhinagar. His research interests encompass multi-hydrological modeling, extreme events, remote sensing, and climate change. Beyond academia, he is a photography enthusiast, tech enthusiast, avid traveler, and passionate about research and innovation, constantly seeking avenues for growth and learning.
+          p xyz@iitgn.ac.in
+          h6 #[a(href='') LinkedIn]
+    .member 
+        div.memberIMG 
+          img(src="", alt="")
+        div.memberDATA 
+    .member.flexx
+        div.memberIMG 
+          img(src="", alt="")
+        div.memberDATA 
+    .member 
+        div.memberIMG
+          img(src="../static/images/Gayatri .jpg", alt="") 
+        div.memberDATA 
+    .member.flexx
+        div.memberIMG 
+          img(src="../static/images/ShahFaisalKhan1.jpg", alt="")
+        div.memberDATA 
+    .member 
+        div.memberIMG 
+          img(src="../static/images/Harsh Jaitwal .jpg", alt="")
+        div.memberDATA 
+          h4 Harsh Jaitwal
+          h5 Member
+          p Hi, I am Harsh Jaitwal, third year undergraduate in the department of chemical Engineering. I am working as a head of social media team to implement and enhance my knowledge and skills in the field of social media marketing.
+          p xyz@iitgn.ac.in
+          h6 #[a(href='') LinkedIn]
+    .member.flexx
+        div.memberIMG 
+          img(src="", alt="")
+        div.memberDATA 
+          h4 Name 
+          h5 Position 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptates. Sed odit, adipisci repudiandae impedit soluta recusandae ut unde! Enim dignissimos, eum numquam molestiae maiores illo minus ad deleniti ducimus obcaecati delectus necessitatibus tenetur laudantium blanditiis perferendis, libero expedita perspiciatis. Tempora atque modi inventore architecto!
+          p xyz@iitgn.ac.in
+          h6 #[a(href='') LinkedIn]
+    .member 
+        div.memberIMG 
+          img(src="", alt="")
+        div.memberDATA 
+          h4 Name
+          h5 Position 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptates. Sed odit, adipisci repudiandae impedit soluta recusandae ut unde! Enim dignissimos, eum numquam molestiae maiores illo minus ad deleniti ducimus obcaecati delectus necessitatibus tenetur laudantium blanditiis perferendis, libero expedita perspiciatis. Tempora atque modi inventore architecto!
+          p xyz@iitgn.ac.in
+          h6 #[a(href='') LinkedIn]
+    .member.flexx
+        div.memberIMG 
+          img(src ="https://drive.google.com/file/d/1pP2AAjCVK9En9q-b2fYgSs90a9xXhxfZ/view?usp=sharing" alt="")
+        div.memberDATA 
+          h4 Himanshu Beniwal
+          h5 Position 
+          p Traveling the 🌎 with ♥️ for ☕️, & crazy for 👨🏼‍💻.
+          p xyz@iitgn.ac.in
+          h6 #[a(href='') LinkedIn]
+
+  section#contact
+    h3 Contact Us
+    div.CONTcontent
+      .right 
+        h4 Anveshnam Club 
+        p Indian Institute of Technology Gandhinagar, Palaj, Gujarat, India -382355.
+        p Email: anveshanam@iitgn.ac.in
+      .left 
+        h4 Connect with us on social media:
+        p #[a(href='') Instagram]
+        p #[a(href='') LinkedIn]
+        p #[a(href='') Whatsapp ]
+      
+
+  div#feedback
+    h6 Your valuable suggestions and feedback are always welcomed here.
+    btn #[a(href="") Suggestions/Feedback]
+
+  footer#footer
+    div#copyright
+      h6 © Copyright 2023 Anveshanam | IIT Gandhinagar- All Rights Reserved
+    div#footimgs
+      a(target="blank" ,href="https://www.instagram.com/anveshanam_iitgn/?igshid=YmMyMTA2M2Y%3D&hl=en")
+        img(src="../static/instafoot.png", alt="Instagram")
+      a(target="blank" ,href='https://www.linkedin.com/in/anveshanam-iitgn-b81a1a243/?originalSubdomain=in')
+        img(src="../static/linkedfoot.png", alt="LinkedIn")
+      a(target="blank" ,href='')
+        img(src="../static/whatsfoot.png", alt="")

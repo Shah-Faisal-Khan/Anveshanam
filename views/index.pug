@@ -1,0 +1,199 @@
+doctype html 
+html
+  head
+    title Anveshanam | IITGN
+
+    link(rel="shortcut icon", href="../static/faviconNEW.png", type="image/x-icon")
+
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+    
+    style
+      include ../static/style.css 
+
+    script
+      include ../static/script.js   
+//- (src="../static/script.js")
+body 
+  nav#navbar 
+    div#logo
+      h3.logname #[a(href='/') anveshanam]
+      //- img.logoimg(src="../static/.png")
+    ul#nav-list
+      li.navitem #[a(href='/') Home]
+      li.navitem #[a(href='/#home-events') Events]
+      li.navitem #[a(href='#whatWeDo') What We Do]
+      li.navitem #[a(href='/aboutUs') About Us]
+      li.navitem #[a(href='/gallery') Gallery]
+      li.navitem #[a(href='/teamContact') Our Team and Contact]
+      //- li.navitem #[a(href='/') Contact]
+
+  sectiion#Image 
+    #homelog 
+      img(src="../static/faviconNEW.png", alt="")
+    h2 ANVESHANAM
+    h3 Research Society of IIT Gandhinagar
+  
+  div.container
+    div.introText 
+      //- p The word Anveshanam means 'research and inquest' in Sanskrit. At Indian Institute of Technology Gandhinagar, team Anveshanam aims to nurture a research-positive environment among the students and provide ample opportunities to learn about various aspects of research, research areas, and tools used to facilitate researchers to come up with innovative, insightful and impactful research. Key activities of our club are general awareness about research, grants, fellowships, software learning, expert lectures, guest interaction sessions and career counseling. We hope to leave a significant impact on our community by continuously nurturing a culture of learning and research.
+      p Testing the hell out!!
+    
+    div.swiper 
+        
+        div.swiper-wrapper  
+          div.swiper-slide 
+            img(src="../static/images/lal-minar1.jpg", alt="")
+          div.swiper-slide 
+            img(src="../static/images/acadArea2.jpg", alt="")
+          div.swiper-slide 
+            img(src="../static/images/terrace_activity_space.jpg", alt="")
+          div.swiper-slide 
+            img(src="../static/images/2021-06-22.jpg", alt="")
+        div.swiper-pagination 
+        div.swiper-button-prev 
+        div.swiper-button-next 
+
+  section#whatWeDo 
+    h3 What We Do
+    div#aim-vision
+      div#aim
+        h4 Aim
+        p At Anveshanam, we strive to create a research-positive environment that fosters students' passion for learning and discovery. We are committed to promoting awareness of diverse research fields and equipping students with the latest state-of-the-art technologies. We aim to provide them with the fundamental values and knowledge to guide them on their research journey and inspire them to achieve their fullest potential. With our dedicated efforts, we aim to create a platform that supports students in pursuing innovative research and innovation.
+      div#vision
+        h4 Vision 
+        p At Anveshanam, we are dedicated to providing students with ample opportunities to learn and explore various aspects of research. We believe in equipping them with the necessary tools and knowledge to facilitate their research endeavours while fostering an environment that encourages creativity and innovation. Through our programs, students can gain valuable insights into different research areas and gain a deeper understanding of how the research community operates. Our goal is to inspire and empower students to come up with innovative ideas and significantly contribute to their respective fields of study. At Anveshanam, we are committed to shaping the future leaders of the research community and enabling them to achieve their full potential. 
+    div#moreACtivity 
+      btn #[a(href="#Activities") Key Activities]
+
+  section#home-events
+    h3 Events
+    div.container
+      div.swiper 
+        
+        div.swiper-wrapper  
+          div.swiper-slide 
+            img(src="../static/images/ms abroad final 2.png", alt="")
+          div.swiper-slide 
+            img(src="../static/images/phdabroad.jpg", alt="")
+          div.swiper-slide 
+            img(src="../static/images/Nserb.jpg", alt="")
+        
+        div.swiper-pagination 
+        div.swiper-button-prev 
+        div.swiper-button-next
+    div#moreEvents 
+      btn #[a(href="/events") Know More]
+
+  
+
+  section#Activities 
+    h3 Key Activities
+    div#awareness.activitiesDIV
+      h4 General awareness about Research
+      p Society will conduct awareness sessions on topics like how to publish research papers, how to write research papers, how to find the best Journal for your work, how to have timely publications, what are the career prospects as a researcher etc.
+    div#softwarelearn.activitiesDIV 
+      h4 Software learning
+      p Many students face challenges in adopting software and learning languages such as Matlab, Latex, Python, etc. The club will assign mentors for various software from whom the students can learn the software of their need.
+    div#expertLec.activitiesDIV 
+      h4 Expert Lectures
+      p The Society will invite Professors, Researchers for talks on the various subjects of expertise and clarify doubts of the members about their research problems. Experts will help members to become excellent researchers by providing their constant guidance.
+    div#guestInteract.activitiesDIV 
+      h4 Guest Interaction sessions
+      p The guests would be the young researchers who recently joined as Professors or as Scientists or who entered the industry in R&D. In such sessions, guests would share their journey and perspectives. Such sessions aim to provide informal discussions with achievers and to motivate the members to seek a promising career.
+    div#careerCoun.activitiesDIV 
+      h4 Career counseling
+      p Society will provide counseling for the career. Society will also update about various vacancies for Ph.D., openings in the lab, opportunities for Postdoc. At the same time, Society will guide its members to achieve a versatile career and invite them as experts for society talks in the future.
+    div#awarenesScholarship.activitiesDIV 
+      h4 Awareness about scholarships and research events
+      p Society aims to provide awareness about various scholarships such as PMRF, Young achiever award, and multiple avenues to represent our work for maximum reach.
+    div#interactionColaAbroad.activitiesDIV 
+      h4 Interaction and collaboration abroad
+      p We invite renounced Professors and Researchers from all over the world for interactions with IITGN Junta. This will open up collaboration opportunities and increase global exposure, thus giving perceptions beyond the national level.
+    div#moreACtivity 
+      btn #[a(href="/aboutUs") Know More About Us]
+  
+
+  div#feedback
+    h6 Your valuable suggestions and feedback are always welcomed here.
+    btn #[a(href="https://forms.gle/aJRgrNMdmr42Su169") Suggestions/Feedback]
+
+  footer#footer
+    div#copyright
+      h6 © Copyright 2023 Anveshanam | IIT Gandhinagar- All Rights Reserved
+    div#footimgs
+      a(target="blank" ,href="https://www.instagram.com/anveshanam_iitgn/?igshid=YmMyMTA2M2Y%3D&hl=en")
+        img(src="../static/instafoot.png", alt="Instagram")
+      a(target="blank" ,href='https://www.linkedin.com/in/anveshanam-iitgn-b81a1a243/?originalSubdomain=in')
+        img(src="../static/linkedfoot.png", alt="LinkedIn")
+      a#whatsapp
+        img(src="../static/whatsfoot.png", alt="")
+      //- img(src="", alt="")
+  
+  div#WAlink 
+    div#close ×
+    h5 Follow the links below:
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/blueWA.png", alt="")
+      h6 B.Tech
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/greenWA.png", alt="")
+      h6 Masters
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/orangeWA.png", alt="")
+      h6 Ph.D
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/redWA.png", alt="")
+      h6 PG-Batch 2022
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/pinkWA.png", alt="")
+      h6 UG-Batch 2022
+
+
+  //- ///////////////////
+  script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")
+  script.
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        //- direction: 'vertical',
+          autoplay:{
+          delay:5000,
+          disableOnInteraction: false,
+          },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        //- scrollbar: {
+        //-   el: '.swiper-scrollbar',
+        //- },
+        });
+
+      //- let Announce = document.getElementById('Announce');
+      //- Announce.addEventListener('mouseover', function parafunc(){
+      //-     //alert('mouse on para');
+      //-     console.log('mouse on para');
+      //-   });
+        
+      document.getElementById('whatsapp').addEventListener('click',function(){
+          document.getElementById('WAlink').style.display ='flex';
+      })
+
+      document.getElementById('close').addEventListener('click',function(){
+          document.getElementById('WAlink').style.display = 'none';
+      })

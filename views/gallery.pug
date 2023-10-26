@@ -1,0 +1,89 @@
+doctype html 
+html
+  head
+    title Gallery
+
+    link(rel="shortcut icon", href="../static/faviconNEW.png", type="image/x-icon")
+
+    style
+      include ../static/style.css 
+      include ../static/lightbox.min.css
+
+    script
+      include ../static/script.js  
+      include ../static/lightbox-plus-jquery.min.js 
+//- (src="../static/script.js")
+body 
+  nav#navbar 
+    div#logo
+      h3.logname #[a(href='/') anveshanam]
+      //- img.logoimg(src="../static/.png")
+    ul#nav-list
+      li.navitem #[a(href='/') Home]
+      li.navitem #[a(href='/#home-events') Events]
+      li.navitem #[a(href='/#whatWeDo') What We Do]
+      li.navitem #[a(href='/aboutUs') About Us]
+      li.navitem #[a(href='/gallery') Gallery]
+      li.navitem #[a(href='/teamContact') Our Team and Contact]
+
+  section#gallerypics 
+    h3 Our Gallery 
+    div#gallery1
+      h4 Event-one 
+      div#gallery11 
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+        a(href="../static/images/labhunt.png", data-lightbox="mygallery", data-title="firstimg") 
+          img(src="../static/images/labhunt.png", alt="")
+
+  div#feedback
+    h6 Your valuable suggestions and feedback are always welcomed here.
+    btn #[a(href="https://forms.gle/aJRgrNMdmr42Su169") Suggestions/Feedback]
+
+  footer#footer
+    div#copyright
+      h6 © Copyright 2023 Anveshanam | IIT Gandhinagar- All Rights Reserved
+    div#footimgs
+      a(target="blank" ,href="https://www.instagram.com/anveshanam_iitgn/?igshid=YmMyMTA2M2Y%3D&hl=en")
+        img(src="../static/instafoot.png", alt="Instagram")
+      a(target="blank" ,href='https://www.linkedin.com/in/anveshanam-iitgn-b81a1a243/?originalSubdomain=in')
+        img(src="../static/linkedfoot.png", alt="LinkedIn")
+      a#whatsapp
+        img(src="../static/whatsfoot.png", alt="")
+      //- img(src="", alt="")
+  
+  div#WAlink 
+    div#close ×
+    h5 Follow the links below:
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/blueWA.png", alt="")
+      h6 B.Tech
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/greenWA.png", alt="")
+      h6 Masters
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/orangeWA.png", alt="")
+      h6 Ph.D
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/redWA.png", alt="")
+      h6 PG-Batch 2022
+    div#WA 
+      a(target="blank", href="")
+        img(src="../static/images/pinkWA.png", alt="")
+      h6 UG-Batch 2022

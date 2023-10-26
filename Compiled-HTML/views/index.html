@@ -1,0 +1,466 @@
+<!DOCTYPE html ><html><head><title>Anveshanam | IITGN</title><link rel="shortcut icon" href="../static/faviconNEW.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/><style>*{
+    margin: 0;
+    padding: 0;
+    font-family: futura;
+}
+/* #7EB6C8 */
+@font-face {
+    font-family: Samarkan;
+    src: url(../static/SamarkanNormal-Gg5D.ttf);
+}
+@font-face {
+    font-family: futura;
+    src: url(../static/FuturaNowHeadline.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    padding: 0px;
+    /* padding-right: 8px; */
+    display: flex;
+    justify-content: right;
+    background-color: #db1133cc;
+    /* opacity: 80%; */
+    position: sticky;
+    top:0;
+    align-items: center;
+    padding-bottom: 13px;
+    z-index: 2;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width:75%;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 0px 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18.5px;
+}
+.navitem{
+    margin: 22px 0;
+}
+#navbar li a:hover{
+    color: #003970;
+    text-decoration: none;
+    padding: 0px 30px;
+    
+}
+#navbar div{
+    height: 70px;
+    width:25%;
+    justify-content: left; 
+    margin-top: 6px;  
+    margin-left: 14px;
+    color: white;
+    text-decoration: none;
+}
+#navbar div h3{
+    margin-top: 12px;
+}
+#navbar div h3 a{
+    font-family: Samarkan;
+    font-size: 43px;
+    padding: 5px 10px; 
+    font-weight: 100; 
+    text-decoration: none;
+    color: white;
+}
+#navbar div h3 a:hover{
+    font-family: Samarkan;
+    font-size: 43px;
+    padding: 5px 10px; 
+    font-weight: 100; 
+    text-decoration: none;
+    color:#41eaf3;
+}
+#Image{
+    display: flex;
+    flex-direction: column;
+    color: #003970;
+    height: 623px;
+    /* background-image: url(../static/anveshanamLOGO.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+#Image h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+#Image h3{
+    color: #7EB6C8;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* /////////////////////////swiper////////// */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper{
+    width:100%;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+}
+
+.swiper-slide img{
+    width:100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+/* ////////////////////////////////////////end of swiper */
+#home-events {
+    background-color: #ffbdbd;
+    text-align: center;
+    padding-top: 100px;
+    /* height: fit-content; */
+    padding-bottom: 15px;
+}
+#home-events .container{
+    width: 100%;
+    /* height: 100vh; */
+    background: #ffbdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home-events .swiper{
+    /* height:100%; */
+    /* height: 100vh; */
+    width: 30%;
+    background-size: contain;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+}
+#home-events .swiper-slide img{
+    /* height: fit-content; */
+    /* width: 20%; */
+}
+.container .introText{
+    color: #fff;
+    text-align: justify;
+    z-index: +1;
+    font-size: 25px;
+    display: block;
+    padding: 140px
+}
+#AimVision{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 100px;
+    margin-bottom: 70px;
+}
+#aim{
+    padding-right: 15px;
+}
+#vision{
+    padding-left: 15px;
+}
+#AimVision h3{
+    text-align: center;
+    color:#41eaf3;
+    font-size: 30px;
+}
+#AimVision p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#Events{
+    background-color: rgb(201, 242, 255);
+    /* height: 300px; */
+    justify-content: center;
+    padding: 20px 0px;
+    /* border: 5px solid black; */
+    text-align: center;
+}
+
+.anEvent{
+    display: inline-block;
+    /* border: 2px solid black;
+    border-radius: 5px; */
+    width: 30%;
+    margin: 30px 20px;
+    padding-top: 6px;
+    /* position: inherit; */
+}
+.anEvent p{
+    font-size: 20px;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    
+}
+.card-image{
+    height: 300px; 
+}
+.card-image img{
+    height:inherit ;
+}
+#Events h3, #home-events h3{
+    text-align: center;
+    font-size: 36px;
+    color: #db1133;
+    /* border: 5px solid pink; */
+}
+#home-events h3{
+    margin-bottom: 15px;
+}
+#Events h4{
+    /* text-align: center; */
+    font-size: 27px;
+    color: #003970;
+}
+#Activities{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    background-image: url(../static/images/jason-goodman-m2TU2gfqSeE-unsplash\ -\ Edited.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+#Activities h3{
+    text-align: center;
+    font-size: 36px;
+    color: #db1133;
+}
+#Activities h4{
+    /* text-align: center; */
+    font-size: 25px;
+    color: #003970;
+}
+#Activities p{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.activitiesDIV{
+   margin: 11px 0; 
+}
+#moreACtivity, #moreEvents{
+    
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+#moreEvents{
+    margin-top: 20px;
+}
+#Activities a, #home-events a{
+    color: #db1133;
+    text-decoration:  none;
+    border: solid #003970 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-items: center;
+}
+#Activities a:hover, #home-events a:hover{
+    color: #41eaf3;
+    text-decoration:  none;
+    border: solid #003970 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-items: center;
+}
+#Announce{
+    height: 300px;
+}
+#About{
+    height: 300px;
+}
+#feedback{
+    background-color: #95d1ebe1;
+    height: 220px;
+    /* border-top: 3px solid rgba(74, 71, 71, 0.862); */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#feedback btn a{
+    text-decoration: none;
+    color: #c31414;
+    text-decoration:  none;
+    border: solid #ffffff 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    justify-items: center;
+    /* background-color: #496987; */
+}
+#feedback btn a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration:  none;
+    border: solid #ffffff 3px;
+    border-radius: 22px;
+    padding: 4px 14px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    justify-items: center;
+    background-color: #db1133da;
+}
+#feedback h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#footer{
+    height: 70px;
+    background-color: rgb(47, 45, 45);
+    padding: 20px 100px;
+    display: flex;
+    justify-items: center;
+}
+#copyright{
+    width: 60%;
+    color: white;
+    justify-items:center ;
+    font-size: 30px;
+    font-weight: 100;
+}
+#copyright h6{
+    font-weight: 100;
+    margin-top: 14px;
+}
+#footimgs{
+    height: 65px;
+    width:40%;
+    justify-items: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 7px;
+}
+#footer img{
+    height:40px;
+    margin: 0px 10px;
+    border-radius: 20%;
+    border: 5px solid white;
+}
+#footer img:hover{
+    height:40px;
+    margin: 0px 10px;
+    border-radius: 20%;
+    border: 5px solid white;
+    filter: invert(100%);
+}
+#ourTeam h3, #contact h3{
+    text-align: center;
+    font-size: 36px;
+    color: #db1133;
+}
+#ourTeam .member{
+    height: 322px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+#ourTeam .memberIMG{
+    height: 320px;
+}
+#ourTeam .memberIMG img{
+    height: inherit;
+}
+#contact{
+    background-image: url(../static/images/banksof.png);
+    height: 425px;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    /* display: flex;
+    flex-direction:column; */
+}
+#contact .CONTcontent{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+#contact .right{
+    width:50%;
+}
+#contact .left{
+    width:50%;
+}
+#contact h4{
+    font-size: 23px;
+    color: #ffeaea;
+    margin-bottom: 10px;
+}
+#contact p{
+    font-size: 20px;
+    text-align: none;
+    color: #fff;
+}
+#contact a{
+    text-decoration: none;
+    color: #fff;
+}
+#contact a:hover{
+    color:#95d1ebe1;
+}
+@media only screen and (max-width: 1198px ){
+    
+}</style><script> </script></head></html><body> <nav id="navbar"> <div id="logo"><h3 class="logname"><a href="/">anveshanam</a></h3></div><ul id="nav-list"><li class="navitem"><a href="/">Home</a></li><li class="navitem"><a href="/#home-events">Events</a></li><li class="navitem"><a href="/">Announcements</a></li><li class="navitem"><a href="#Activities">Activities</a></li><li class="navitem"><a href="/">Gallery</a></li><li class="navitem"><a href="/about">Our Team and Contact</a></li></ul></nav><sectiion id="Image"> <div id="homelog"> <img src="../static/faviconNEW.png" alt=""/></div><h2>ANVESHANAM</h2><h3>Research Society of IIT Gandhinagar</h3></sectiion><div class="container"><div class="introText"> <p>The word Anveshanam means 'research and inquest' in Sanskrit. At Indian Institute of Technology Gandhinagar, team Anveshanam aims to nurture a research-positive environment among the students and provide ample opportunities to learn about various aspects of research, research areas, and tools used to facilitate researchers to come up with innovative, insightful and impactful research. Key activities of our club are general awareness about research, grants, fellowships, software learning, expert lectures, guest interaction sessions and career counseling. We hope to leave a significant impact on our community by continuously nurturing a culture of learning and research.</p></div><div class="swiper"> <div class="swiper-wrapper"> <div class="swiper-slide"> <img src="../static/images/lal-minar1.jpg" alt=""/></div><div class="swiper-slide"> <img src="../static/images/acadArea1.jpg" alt=""/></div><div class="swiper-slide"> <img src="../static/images/maserati.jpg" alt=""/></div><div class="swiper-slide"> <img src="../static/images/logoIMP.jpg" alt=""/></div></div><div class="swiper-pagination"> </div><div class="swiper-button-prev"> </div><div class="swiper-button-next"> </div></div></div><section id="AimVision"> <div id="aim"><h3>Aim</h3><p>Anveshanam aims to nurture a research-positive environment among the students and make students aware of the various research fields. Educate them about State-of-the-art technologies and help them familiarize themselves with the fundamental values that will be helpful for their research journey. </p></div><div id="vision"> <h3>Vision </h3><p>Anveshanam provides the students ample opportunity to learn and learn about various aspects of research, research areas, and tools used to facilitate research to come up with innovative ideas and get more insights into how the research community works. </p></div></section><section id="home-events"><h3>Events</h3><div class="container"><div class="swiper"> <div class="swiper-wrapper"> <div class="swiper-slide"> <img src="../static/images/ms abroad final 2.png" alt=""/></div><div class="swiper-slide"> <img src="../static/images/phdabroad.jpg" alt=""/></div></div><div class="swiper-pagination"> </div><div class="swiper-button-prev"> </div><div class="swiper-button-next"></div></div></div><div id="moreEvents"> <btn><a href="/events">Know More</a></btn></div></section><section id="Announce"> announcements</section><section id="Activities"> <h3>Activities</h3><div class="activitiesDIV" id="awareness"><h4>General awareness about Research</h4><p>Society will conduct awareness sessions on topics like how to publish research papers, how to write research papers, how to find the best Journal for your work, how to have timely publications, what are the career prospects as a researcher etc.</p></div><div class="activitiesDIV" id="softwarelearn"> <h4>Software learning</h4><p>Many students face challenges in adopting software and learning languages such as Matlab, Latex, Python, etc. The club will assign mentors for various software from whom the students can learn the software of their need.</p></div><div class="activitiesDIV" id="expertLec"> <h4>Expert Lectures</h4><p>The Society will invite Professors, Researchers for talks on the various subjects of expertise and clarify doubts of the members about their research problems. Experts will help members to become excellent researchers by providing their constant guidance.</p></div><div class="activitiesDIV" id="guestInteract"> <h4>Guest Interaction sessions</h4><p>The guests would be the young researchers who recently joined as Professors or as Scientists or who entered the industry in R&D. In such sessions, guests would share their journey and perspectives. Such sessions aim to provide informal discussions with achievers and to motivate the members to seek a promising career.</p></div><div class="activitiesDIV" id="careerCoun"> <h4>Career counseling</h4><p>Society will provide counseling for the career. Society will also update about various vacancies for Ph.D., openings in the lab, opportunities for Postdoc. At the same time, Society will guide its members to achieve a versatile career and invite them as experts for society talks in the future.</p></div><div class="activitiesDIV" id="awarenesScholarship"> <h4>Awareness about scholarships and research events</h4><p>Society aims to provide awareness about various scholarships such as PMRF, Young achiever award, and multiple avenues to represent our work for maximum reach.</p></div><div class="activitiesDIV" id="interactionColaAbroad"> <h4>Interaction and collaboration abroad</h4><p>We invite renounced Professors and Researchers from all over the world for interactions with IITGN Junta. This will open up collaboration opportunities and increase global exposure, thus giving perceptions beyond the national level.</p></div><div id="moreACtivity"> <btn><a href="">Know More</a></btn></div></section><div id="feedback"><h6>Your valuable suggestions and feedback are always welcomed here.</h6><btn><a href="https://forms.gle/aJRgrNMdmr42Su169">Suggestions/Feedback</a></btn></div><footer id="footer"><div id="copyright"><h6>© Copyright 2023 Anveshanam | IIT Gandhinagar- All Rights Reserved</h6></div><div id="footimgs"><a target="blank" href="https://www.instagram.com/anveshanam_iitgn/?igshid=YmMyMTA2M2Y%3D&amp;hl=en"><img src="../static/instafoot.png" alt="Instagram"/></a><a target="blank" href="https://www.linkedin.com/in/anveshanam-iitgn-b81a1a243/?originalSubdomain=in"><img src="../static/linkedfoot.png" alt="LinkedIn"/></a><a target="blank" href=""><img src="../static/whatsfoot.png" alt=""/></a></div></footer><script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script><script>const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  //- direction: 'vertical',
+    autoplay:{
+    delay:5000,
+    disableOnInteraction: false,
+    },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  //- scrollbar: {
+  //-   el: '.swiper-scrollbar',
+  //- },
+  });</script></body>
