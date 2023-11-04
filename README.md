@@ -4,3 +4,7 @@ Website for Anveshanam. Research society at Indian Institute of Technology Gandh
 
 # Instructions to install & run
 1. 
+
+
+## Screenshots right now
+1. 
