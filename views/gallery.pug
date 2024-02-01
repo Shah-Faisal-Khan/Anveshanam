@@ -12,7 +12,13 @@ html
     script
       include ../static/script.js  
       include ../static/lightbox-plus-jquery.min.js 
+      //- include https://code.jquery.com/jquery-3.6.4.min.js
+
+
 //- (src="../static/script.js")
+script(src="https://code.jquery.com/jquery-3.6.4.min.js")
+script(src="../static/lightbox-plus-jquery.min.js")
+
 body 
   nav#navbar 
     div#logo
@@ -21,53 +27,56 @@ body
     ul#nav-list
       li.navitem #[a(href='/') Home]
       li.navitem #[a(href='/#home-events') Events]
-      li.navitem #[a(href='/#whatWeDo') What We Do]
-      li.navitem #[a(href='/aboutUs') About Us]
+      li.navitem #[a(href='/#whatWeDo') About Us]
+      //- li.navitem #[a(href='/aboutUs') About Us]
       li.navitem #[a(href='/gallery') Gallery]
       li.navitem #[a(href='/teamContact') Our Team and Contact]
 
   section#gallerypics 
     h3 Our Gallery 
     div#gallery1
-      h4 Event-one 
+      //- h4 Event-one 
       div#gallery11 
-        a(href="../static/Web site photos/3eec9c76-097a-4821-8314-1d66f1ad9504.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/3eec9c76-097a-4821-8314-1d66f1ad9504.jpg", data-lightbox="mygallery", data-title="Lecture Event") 
           img(src="../static/Web site photos/3eec9c76-097a-4821-8314-1d66f1ad9504.jpg", alt="")
-        a(href="../static/Web site photos/4eaab814-c93d-42ee-8e06-766c20858563.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/4eaab814-c93d-42ee-8e06-766c20858563.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/4eaab814-c93d-42ee-8e06-766c20858563.jpg", alt="")
-        a(href="../static/Web site photos/0e259eec-24e5-479f-b4a9-a51f65cfd149.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/0e259eec-24e5-479f-b4a9-a51f65cfd149.jpg", data-lightbox="mygallery", data-title="Our Team") 
           img(src="../static/Web site photos/0e259eec-24e5-479f-b4a9-a51f65cfd149.jpg", alt="")
-        a(href="../static/Web site photos/6b122073-914c-49ca-a0f3-736f32a9a3d2.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/6b122073-914c-49ca-a0f3-736f32a9a3d2.jpg", data-lightbox="mygallery", data-title="Lab Hunt 23") 
           img(src="../static/Web site photos/6b122073-914c-49ca-a0f3-736f32a9a3d2.jpg", alt="")
-        a(href="../static/Web site photos/2110b2b9-172d-4a39-afa9-148b73ecb915.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/2110b2b9-172d-4a39-afa9-148b73ecb915.jpg", data-lightbox="mygallery", data-title="Lab Hunt 23") 
           img(src="../static/Web site photos/2110b2b9-172d-4a39-afa9-148b73ecb915.jpg", alt="")
-        a(href="../static/Web site photos/59364fd6-1394-4405-84a2-9b6796784512.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/59364fd6-1394-4405-84a2-9b6796784512.jpg", data-lightbox="mygallery", data-title="Lecture Event") 
           img(src="../static/Web site photos/59364fd6-1394-4405-84a2-9b6796784512.jpg", alt="")
-        a(href="../static/Web site photos/594863e1-6cef-4591-b856-9aab6b76358d.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/594863e1-6cef-4591-b856-9aab6b76358d.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/594863e1-6cef-4591-b856-9aab6b76358d.jpg", alt="")
-        a(href="../static/Web site photos/922566c3-ef6e-40b9-ad81-3d4cfd666310.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/922566c3-ef6e-40b9-ad81-3d4cfd666310.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/922566c3-ef6e-40b9-ad81-3d4cfd666310.jpg", alt="")
-        a(href="../static/Web site photos/af37b651-b964-4595-aed3-81602e566b67.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/af37b651-b964-4595-aed3-81602e566b67.jpg", data-lightbox="mygallery", data-title="Movie Screening") 
           img(src="../static/Web site photos/af37b651-b964-4595-aed3-81602e566b67.jpg", alt="")
-        a(href="../static/Web site photos/b77d6623-6144-4442-b6f4-584f4f548b0f.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/b77d6623-6144-4442-b6f4-584f4f548b0f.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/b77d6623-6144-4442-b6f4-584f4f548b0f.jpg", alt="")
-        a(href="../static/Web site photos/bcb41500-2f0c-42d0-a191-a48bcddf357b.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/bcb41500-2f0c-42d0-a191-a48bcddf357b.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/bcb41500-2f0c-42d0-a191-a48bcddf357b.jpg", alt="")
-        a(href="../static/Web site photos/ca56db63-aefd-4bbe-a98e-655a2e601326.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/ca56db63-aefd-4bbe-a98e-655a2e601326.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/ca56db63-aefd-4bbe-a98e-655a2e601326.jpg", alt="")
-        a(href="../static/Web site photos/e4b41431-f7f2-4739-9be0-dd61d5fb95e1.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/e4b41431-f7f2-4739-9be0-dd61d5fb95e1.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/e4b41431-f7f2-4739-9be0-dd61d5fb95e1.jpg", alt="")
-        a(href="../static/Web site photos/e60809ca-d684-4932-a579-aef2342d5ccd.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/e60809ca-d684-4932-a579-aef2342d5ccd.jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/e60809ca-d684-4932-a579-aef2342d5ccd.jpg", alt="")
-        a(href="../static/Web site photos/thumbnail (1).jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/thumbnail (1).jpg", data-lightbox="mygallery", data-title="Lab Hunt 22") 
           img(src="../static/Web site photos/thumbnail (1).jpg", alt="")
-        a(href="../static/Web site photos/thumbnail (2).jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/thumbnail (2).jpg", data-lightbox="mygallery", data-title="Masters Presentation") 
           img(src="../static/Web site photos/thumbnail (2).jpg", alt="")
-        a(href="../static/Web site photos/thumbnail (3).jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/thumbnail (3).jpg", data-lightbox="mygallery", data-title="Research Event") 
           img(src="../static/Web site photos/thumbnail (3).jpg", alt="")
-        a(href="../static/Web site photos/thumbnail.jpg", data-lightbox="mygallery", data-title="firstimg") 
+        a(href="../static/Web site photos/thumbnail.jpg", data-lightbox="mygallery", data-title="Lecture Event") 
           img(src="../static/Web site photos/thumbnail.jpg", alt="")
-        
+        a(href="../static/Web site photos/96085394-840d-4fe4-87e1-7b1ea608b514.jpg", data-lightbox="mygallery", data-title="Lecture Event") 
+          img(src="../static/Web site photos/96085394-840d-4fe4-87e1-7b1ea608b514.jpg", alt="")
+        a(href="../static/Web site photos/e9ccc55c-c1ab-483d-823c-3d85d0913c07.jpg", data-lightbox="mygallery", data-title="Lab VIEW") 
+          img(src="../static/Web site photos/e9ccc55c-c1ab-483d-823c-3d85d0913c07.jpg", alt="")
 
   div#feedback
     h6 Your valuable suggestions and feedback are always welcomed here.
@@ -75,36 +84,36 @@ body
 
   footer#footer
     div#copyright
-      h6 © Copyright 2023 Anveshanam | IIT Gandhinagar- All Rights Reserved
+      h6 © Copyright 2024 Anveshanam | IIT Gandhinagar- All Rights Reserved
     div#footimgs
       a(target="blank" ,href="https://www.instagram.com/anveshanam_iitgn/?igshid=YmMyMTA2M2Y%3D&hl=en")
         img(src="../static/instafoot.png", alt="Instagram")
       a(target="blank" ,href='https://www.linkedin.com/in/anveshanam-iitgn-b81a1a243/?originalSubdomain=in')
         img(src="../static/linkedfoot.png", alt="LinkedIn")
-      a#whatsapp
-        img(src="../static/whatsfoot.png", alt="")
+      a(target="blank", href='https://chat.whatsapp.com/ISAOj79iZ1l2HUvixxAiHE')
+        img(src="../static/whatsfoot.png", alt="WhatsApp")
       //- img(src="", alt="")
   
-  div#WAlink 
-    div#close ×
-    h5 Follow the links below:
-    div#WA 
-      a(target="blank", href="")
-        img(src="../static/images/blueWA.png", alt="")
-      h6 B.Tech
-    div#WA 
-      a(target="blank", href="")
-        img(src="../static/images/greenWA.png", alt="")
-      h6 Masters
-    div#WA 
-      a(target="blank", href="")
-        img(src="../static/images/orangeWA.png", alt="")
-      h6 Ph.D
-    div#WA 
-      a(target="blank", href="")
-        img(src="../static/images/redWA.png", alt="")
-      h6 PG-Batch 2022
-    div#WA 
-      a(target="blank", href="")
-        img(src="../static/images/pinkWA.png", alt="")
-      h6 UG-Batch 2022
+  //- div#WAlink 
+  //-   div#close ×
+  //-   h5 Follow the links below:
+  //-   div#WA 
+  //-     a(target="blank", href="")
+  //-       img(src="../static/images/blueWA.png", alt="")
+  //-     h6 B.Tech
+  //-   div#WA 
+  //-     a(target="blank", href="")
+  //-       img(src="../static/images/greenWA.png", alt="")
+  //-     h6 Masters
+  //-   div#WA 
+  //-     a(target="blank", href="")
+  //-       img(src="../static/images/orangeWA.png", alt="")
+  //-     h6 Ph.D
+  //-   div#WA 
+  //-     a(target="blank", href="")
+  //-       img(src="../static/images/redWA.png", alt="")
+  //-     h6 PG-Batch 2022
+  //-   div#WA 
+  //-     a(target="blank", href="")
+  //-       img(src="../static/images/pinkWA.png", alt="")
+  //-     h6 UG-Batch 2022

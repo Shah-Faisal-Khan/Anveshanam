@@ -18,7 +18,7 @@ body
       //- img.logoimg(src="../static/.png")
     ul#nav-list
       li.navitem #[a(href='/') Home]
-      li.navitem #[a(href='/events') Events]
+      //- li.navitem #[a(href='/events') Events]
       li.navitem #[a(href='/#Activities') Activities]
       li.navitem #[a(href='/#home-events') Announcements]
       li.navitem #[a(href='/gallery') Gallery]
@@ -26,7 +26,84 @@ body
 
   section#Events 
     h3 Events
-  
+
+    div.anEvent
+        h4 Hidden Figures: Movie Screening
+        div.card-box 
+          div.card-image
+            img(src="../static/Posters/Movie Screening _Hidden Figures.png", alt="")
+          div.eventTEXT
+            //- p Speaker: Prof. Vannet Aggrawal
+            //- p Designation: Assoc. Prof. Purdue University
+            p Date: Friday, September 15, 2023
+            p Topic: Anveshanam Movie Screening
+    
+    div.anEvent
+      h4 3 Day Workshop on Labview
+      div.card-box 
+        div.card-image
+          img(src="../static/Posters/NI Workshop.png", alt="")
+        div.eventTEXT
+          p Collabotators: NI and Tech Council
+          p Designation: IITGN
+          p Date: July 17-19, 2023
+          p Topic: LabView and Basics of DAQ
+    
+    div.anEvent
+      h4 Exploring Career Paths
+      div.card-box 
+        div.card-image
+          img(src="../static/Posters/Exploring career paths_Dr. Ankit Agarwal and Dr. Aditya Raj.jpeg", alt="")
+        div.eventTEXT
+          p Speakers: Dr. Ankit Agarwal and Dr. Aditya Raj
+          //- p Designation: Asst. Prof at IITGN
+          p Date: July 8, 2023
+          p Topic: Exploring Career Paths: Research and Industry perspectives
+    
+    div.anEvent
+      h4 Effective Scientific Research Communication
+      div.card-box 
+        div.card-image
+          img(src="../static/Posters/Nserb.jpg", alt="")
+        div.eventTEXT
+          p Speakers: Prof. Himanshu Shekhar and Prof. Karla Mercado-Shekhar
+          //- p Designation: Asst. Prof. IIT Guwahati
+          p Date: Tuesday, March 14 2023
+          p Topic: Research Communication Workshop
+
+    div.anEvent
+      h4 The Imitation Game: Movie Screening
+      div.card-box 
+        div.card-image
+          img(src="../static/Posters/Movie screen_The Imitation Games.png", alt="")
+        div.eventTEXT
+          //- p Speaker: Dr. Kaling Taki
+          //- p Designation: Asst. Prof. IIT Guwahati
+          p Date: March 11 2023
+          p Topic: Anveshanam Movie Screening
+    
+    div.anEvent
+      h4 PHD Abroad
+      div.card-box 
+        div.card-image
+          img(src="../static/Posters/PhD Abroad_Abhinanda Das.png", alt="")
+        div.eventTEXT
+          p Speaker: Ms. Abhinanda Dash
+          p Designation: Alumni IITGn
+          p Date: March 4, 2023
+          p Topic: PHD Abroad
+
+    div.anEvent
+      h4 MS Abroad
+      div.card-box 
+        div.card-image
+          img(src="../static/Posters/Journey to MS Abroad_Varun and Dhruvi.png", alt="")
+        div.eventTEXTT
+          p Speakers: Mr. Varun Jain and Ms. Dhruvi
+          p Designation: Allumni IITGN
+          p Date: February 25, 2023
+          p Topic: Journey to MS Abroad
+
     div.anEvent
       h4 Resonance as a design strategy in AI and Social Robotics
       div.card-box 
@@ -60,16 +137,7 @@ body
           p Date: July 9, 2022
           p Topic: Data Visualization
     
-    div.anEvent
-      h4 Exploring Career Paths
-      div.card-box 
-        div.card-image
-          img(src="../static/Posters/Exploring career paths_Dr. Ankit Agarwal and Dr. Aditya Raj.jpeg", alt="")
-        div.eventTEXT
-          p Speakers: Dr. Ankit Agarwal and Dr. Aditya Raj
-          //- p Designation: Asst. Prof at IITGN
-          p Date: July 8, 2023
-          p Topic: Exploring Career Paths: Research and Industry perspectives
+    
     
     div.anEvent
       h4 FullBright Program
@@ -93,49 +161,7 @@ body
           p Date: July 2, 2022
           p Topic: An Academia-Industry Drive Through
     
-    div.anEvent
-      h4 MS Abroad
-      div.card-box 
-        div.card-image
-          img(src="../static/Posters/Journey to MS Abroad_Varun and Dhruvi.png", alt="")
-        div.eventTEXTT
-          p Speakers: Mr. Varun Jain and Ms. Dhruvi
-          p Designation: Allumni IITGN
-          p Date: February 25, 2023
-          p Topic: Journey to MS Abroad
     
-    div.anEvent
-      h4 The Imitation Game: Movie Screening
-      div.card-box 
-        div.card-image
-          img(src="../static/Posters/Movie screen_The Imitation Games.png", alt="")
-        div.eventTEXT
-          //- p Speaker: Dr. Kaling Taki
-          //- p Designation: Asst. Prof. IIT Guwahati
-          p Date: March 11 2023
-          p Topic: Anveshanam Movie Screening
-    
-    div.anEvent
-      h4 Hidden Figures: Movie Screening
-      div.card-box 
-        div.card-image
-          img(src="../static/Posters/Movie Screening _Hidden Figures.png", alt="")
-        div.eventTEXT
-          //- p Speaker: Prof. Vannet Aggrawal
-          //- p Designation: Assoc. Prof. Purdue University
-          p Date: Friday, September 15, 2023
-          p Topic: Anveshanam Movie Screening
-    
-    div.anEvent
-      h4 3 Day Workshop on Labview
-      div.card-box 
-        div.card-image
-          img(src="../static/Posters/NI Workshop.png", alt="")
-        div.eventTEXT
-          p Collabotators: NI and Tech Council
-          p Designation: IITGN
-          p Date: July 17-19, 2023
-          p Topic: LabView and Basics of DAQ
     
     div.anEvent
       h4 Peer Review
@@ -149,16 +175,7 @@ body
           p Date: September 19, 2022
           p Topic: Theology, Algorithms and Application
     
-    div.anEvent
-      h4 PHD Abroad
-      div.card-box 
-        div.card-image
-          img(src="../static/Posters/PhD Abroad_Abhinanda Das.png", alt="")
-        div.eventTEXT
-          p Speaker: Ms. Abhinanda Dash
-          p Designation: Alumni IITGn
-          p Date: March 4, 2023
-          p Topic: Nidhi Prayas Grant awareness
+    
     
     div.anEvent
       h4 The PHD Movie
@@ -225,3 +242,19 @@ body
           p Designation: Dy Director, BISNET, FICCI
           p Date: September 11, 2022
           p Topic: Industry Partnered PMRF
+
+
+  div#feedback
+    h6 Your valuable suggestions and feedback are always welcomed here.
+    btn #[a(href="https://forms.gle/aJRgrNMdmr42Su169") Suggestions/Feedback]
+
+  footer#footer
+    div#copyright
+      h6 © Copyright 2024 Anveshanam | IIT Gandhinagar- All Rights Reserved
+    div#footimgs
+      a(target="blank" ,href="https://www.instagram.com/anveshanam_iitgn/?igshid=YmMyMTA2M2Y%3D&hl=en")
+        img(src="../static/instafoot.png", alt="Instagram")
+      a(target="blank" ,href='https://www.linkedin.com/in/anveshanam-iitgn-b81a1a243/?originalSubdomain=in')
+        img(src="../static/linkedfoot.png", alt="LinkedIn")
+      a(target="blank", href='https://chat.whatsapp.com/ISAOj79iZ1l2HUvixxAiHE')
+        img(src="../static/whatsfoot.png", alt="WhatsApp")
