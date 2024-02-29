@@ -34,6 +34,8 @@ app.get('/gallery', (req,res)=>{
     })
 
 //START THE SERVER
-app.listen(port, ()=>{
-    console.log(`first app successful on port ${port}`)
-})
+// app.listen(port, ()=>{
+//     console.log(`first app successful on port ${port}`)
+// })
+
+app.listen(process.env.PORT || port, () => console.log(`listening on port ${port}`)
